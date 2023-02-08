@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/uikit.css">
+    <script src="js/uikit.js"></script>
+    <script src="tiket.js"></script>
+    <title>Home Page</title>
+</head>
+<body>
+    
+    <!-- <script>
+        var nama = prompt("Siapa nama kamu?", "");
+    </script> -->
+    
+    <!-- slide  -->
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push autoplay-interval: 20">
+
+        <ul class="uk-slideshow-items">
+            <li>
+                <img src="https://th.bing.com/th/id/R.02d6918f6f7da2304741828826629652?rik=znlYdGWKEjq34Q&riu=http%3a%2f%2fwww.airportspotting.com%2fwp-content%2fuploads%2f2014%2f10%2fGIA-737-MAX.jpg&ehk=SxotJ3y2vdY7cS5Io%2frqHU6cCpDcyiLKz7K1Vd6nx9g%3d&risl=&pid=ImgRaw&r=0" alt="" uk-cover>
+                <div class="uk-position-large uk-position-center uk-position-small uk-text-center">
+                    <h2 uk-slideshow-parallax="x: 100,-100">
+                        <script>
+                            document.write("<p>Hallo "+ nama +"</p>");
+                        </script>
+                    </h2>
+                    <p uk-slideshow-parallax="x: 200,-200">Welkom di Garuda Indonesia. klik dibawah untuk cek jadwal penerbangan </p>
+                    <a class="uk-button" href="#modal-full" uk-toggle>BOOKING</a>
+                    <h3 id="jam"></h3>
+                </div>
+            </li>
+            <li>
+                <img src="https://airbus-h.assetsadobe2.com/is/image/content/dam/products-and-solutions/commercial-aircraft/a330-family/a330-900neo/A330-900neo_Garuda_Indonesia.jpg?wid=1920&fit=fit,1&qlt=85,0" alt="" uk-cover>
+                <div class="uk-position-large uk-position-large uk-position-center uk-position-small uk-text-center">
+                    <h2 uk-slideshow-parallax="x: 100,-100">
+                        <script>
+                            document.write("<p>Hallo "+ nama +"</p>");
+                        </script></h2>
+                    <p uk-slideshow-parallax="x: 200,-200">Welkom di Garuda Indonesia </p>
+                    <a class="uk-button" href="#modal-full" uk-toggle>BOOKING</a>
+                </div>
+            </li>
+            <li>
+                <img src="https://wallpaperaccess.com/full/504405.jpg" alt="" uk-cover>
+                <div class="uk-position-large uk-position-center uk-position-small uk-text-center">
+                    <h2 uk-slideshow-parallax="x: 100,-100">
+                        <script>
+                            document.write("<p>Hallo "+ nama +"</p>");
+                        </script></h2>
+                    <p uk-slideshow-parallax="x: 200,-200">Welkom di Garuda Indonesia </p>
+                    <a class="uk-button" href="#modal-full" uk-toggle>BOOKING</a>
+                </div>
+            </li>
+        </ul>
+    
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+    
+    </div>
+
+<!-- modall -->
+
+
+    <div id="modal-full" class="uk-modal-full" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                <div class="uk-background-cover" style="background-image: url('https://3.bp.blogspot.com/-7yC8d-ig4UI/ViIAyUQmklI/AAAAAAAAChc/Cad5pV2BBC0/s1600/47.jpg');" uk-height-viewport></div>
+                <div class="uk-padding-large">
+                    <h1 class="uk-text-center">Book Tiket *Beta</h1>
+          
+                    <div class="uk-card-header">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto">
+                                <img class="uk-border-circle" width="40" height="40" src="https://th.bing.com/th/id/R.6c6307bf6967ab86d541d7b239dd8862?rik=8FW4rBjxQUUnZw&riu=http%3a%2f%2f3.bp.blogspot.com%2f-kfqmZ6swf14%2fUPkoWbasV_I%2fAAAAAAAAFLQ%2f7DrmTWFM6sQ%2fs1600%2fLogo%2bGaruda%2bIndonesia.jpg&ehk=AgceEsfB7dJJ72kNhRD6yqyTs1pwhgvySXBbCh9LTAA%3d&risl=&pid=ImgRaw&r=0" alt="Avatar">
+                            </div>
+                            <div class="uk-width-expand">
+                                <h3 class="uk-card-title uk-margin-remove-bottom">Garuda Indonesia</h3>
+                                <p class="uk-text-meta uk-margin-remove-top"><script>document.write(hariini);</script> </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="uk-form-stacked">
+
+                        <div class="uk-margin-top">
+                            <label class="uk-form-label" for="form-stacked-text">Nama Lengkap</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" id="input_nama" type="text" placeholder="Masukan Nama Lengkap..">
+                            </div>
+                        </div>
+                    
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="form-stacked-select">Keberangkatan</label>
+                            <div class="uk-form-controls">
+                                <select class="uk-select" id="input_berangkat">
+                                    <option>Keberangkatan</option>
+                                    <option value="bali">Bali</option>
+                                </select>
+                            </div>
+                        </div>
+        
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="form-stacked-select">Tujuan</label>
+                            <div class="uk-form-controls">
+                                <select class="uk-select" id="input_tujuan">
+                                    <option>Tujuan</option>
+                                    <option>surabaya</option>
+                                    <option>Jakarta</option>
+                                </select>
+                            </div>
+                        </div>
+                    
+                    
+                    </form>
+        
+                    <button class="uk-button uk-button-primary uk-width-1-1 uk-margin-small-bottom" href="#modal-sections" uk-toggle onclick="konfirmasi()">Cetak Tiket</button>
+            
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- bawah jgn hapus -->
+</body>
+</html>
