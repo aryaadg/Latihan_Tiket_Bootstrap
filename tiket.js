@@ -9,18 +9,17 @@
                 var tujuan = document.getElementById('input_tujuan').value;
 
                 alert('HAI !! ' + nama +" Pesanan Tiket Kamu dari "+berangkat+" ke "+ tujuan);
-
-            } else{
                 
-            }
+            } 
     }
 
-    // refrensi google
+    // refrensi 
         var tanggallengkap = new String();
         var namahari = ("Minggu Senin Selasa Rabu Kamis Jumat Sabtu");
         namahari = namahari.split(" ");
         var namabulan = ("Januari Februari Maret April Mei Juni Juli Agustus September Oktober November Desember");
         namabulan = namabulan.split(" ");
+
         var tgl = new Date();
         var hari = tgl.getDay();
         var tanggal = tgl.getDate();
